@@ -14,7 +14,7 @@ public class SelfCheckout {
         myApp.output();
     }
 
-    private int item1$Prompt() {
+    private int item1pPrompt() {
         System.out.print("Enter the price of item 1: ");
         return Integer.parseInt(in.nextLine());
     }
@@ -24,7 +24,7 @@ public class SelfCheckout {
         return Integer.parseInt(in.nextLine());
     }
 
-    private int item2$Prompt() {
+    private int item2pPrompt() {
         System.out.print("Enter the price of item 2: ");
         return Integer.parseInt(in.nextLine());
     }
@@ -34,7 +34,7 @@ public class SelfCheckout {
         return Integer.parseInt(in.nextLine());
     }
 
-    private int item3$Prompt() {
+    private int item3pPrompt() {
         System.out.print("Enter the price of item 3: ");
         return Integer.parseInt(in.nextLine());
     }
@@ -52,7 +52,7 @@ public class SelfCheckout {
     }
 
     private void output() {
-        double[] nums = total(item1$Prompt(), item1qPrompt(), item2$Prompt(), item2qPrompt(), item3$Prompt(), item3qPrompt());
+        double[] nums = total(item1pPrompt(), item1qPrompt(), item2pPrompt(), item2qPrompt(), item3pPrompt(), item3qPrompt());
         String subtotal = "Subtotal: $%.2f\n";
         String tax = "Tax: $%.2f\n";
         String total = "Total: $%.2f\n";
